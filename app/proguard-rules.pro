@@ -1,0 +1,4 @@
+-keepattributes *Annotation*, InnerClasses
+-dontwarn kotlinx.serialization.**
+-keep,includedescriptorclasses class il.co.kavo.app.**$$serializer { *; }
+-keepclassmembers class il.co.kavo.app.** { *** Companion; }
