@@ -61,6 +61,10 @@ class MainActivity : ComponentActivity() {
                             },
                             onSelectStop = { vm.selectStop(it.stop) },
                             onClearStop = { vm.clearSelection() },
+                            onSearchQuery = { vm.onSearchQuery(it) },
+                            onOpenSearch = { vm.openSearch() },
+                            onCloseSearch = { vm.closeSearch() },
+                            onStopClickByCode = { code -> vm.selectStopByCode(code) },
                             onViewport = { b ->
                                 vm.onViewport(
                                     b.latitudeSouth, b.latitudeNorth,
