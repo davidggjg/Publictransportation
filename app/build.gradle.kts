@@ -64,5 +64,6 @@ dependencies {
     implementation(libs.kotlinx.coroutines.android)
 
     implementation(libs.play.services.location)
-    implementation(libs.osmdroid.android)
+    implementation(libs.maplibre.android)
+    implementation(libs.accompanist.permissions)
 }
